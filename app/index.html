@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie5" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	 <meta charset="utf-8">
+
+	 <title>Armata</title>
+	 <meta name="description" content="">
+	 <!-- Fonts Loader from _fonts.min.css (HTML5 LocalStorage) -->
+	 <script>
+		  !function () {
+				function e(e, t, n) {
+					 e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent && e.attachEvent("on" + t, n)
+				}
+
+				function t(e) {
+					 return window.localStorage && localStorage.font_css_cache && localStorage.font_css_cache_file === e
+				}
+
+				function n() {
+					 if (window.localStorage && window.XMLHttpRequest)if (t(o))a(localStorage.font_css_cache); else {
+						  var n = new XMLHttpRequest;
+						  n.open("GET", o, !0), e(n, "load", function () {
+								4 === n.readyState && (a(n.responseText), localStorage.font_css_cache = n.responseText, localStorage.font_css_cache_file = o)
+						  }), n.send()
+					 } else {
+						  var c = document.createElement("link");
+						  c.href = o, c.rel = "stylesheet", c.type = "text/css", document.getElementsByTagName("head")[0].appendChild(c), document.cookie = "font_css_cache"
+					 }
+				}
+
+				function a(e) {
+					 var t = document.createElement("style");
+					 t.innerHTML = e, document.getElementsByTagName("head")[0].appendChild(t)
+				}
+
+				var o = "_fonts.min.css";
+				window.localStorage && localStorage.font_css_cache || document.cookie.indexOf("font_css_cache") > -1 ? n() : e(window, "load", n)
+		  }();
+	 </script>
+
+	 <link rel="stylesheet" href="precss/scss_header.css">
+	 <link rel="stylesheet" href="precss/scss_main.css">
+	 <link rel="stylesheet" href="media.css">
+	 <link rel="stylesheet" href="fonts/font-awesome-4.5.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap-grid.min.css">
+
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	 <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	 <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	 <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	 <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+</head>
+
+<body>
+<!-- Шапка сайта -->
+<header class="header">
+
+	 <!-- Верхняя строка меню: лого меню телефон -->
+	 <div class="top-line">
+		  <a href="#">
+				<div class="top-line__logo"></div>
+		  </a>
+		  <nav class="top-line__nav">
+				<div class="top-line__nav-item top-line__nav-item1">
+					 <a href="#" class="top-line__nav-link top-line__nav-link1">Главная</a></div>
+				<div class="top-line__nav-item top-line__nav-item2">
+					 <a href="#" class="top-line__nav-link top-line__nav-link2">О компании</a></div>
+				<div class="top-line__nav-item top-line__nav-item3">
+					 <a href="#" class="top-line__nav-link top-line__nav-link3">Оценка</a></div>
+				<div class="top-line__nav-item top-line__nav-item4">
+					 <a href="#" class="top-line__nav-link top-line__nav-link4">Сделки M&amp;A</a></div>
+				<div class="top-line__nav-item top-line__nav-item5">
+					 <a href="#" class="top-line__nav-link top-line__nav-link5">Бухгалтерские услуги</a></div>
+				<div class="top-line__nav-item top-line__nav-item5">
+					 <a href="#" class="top-line__nav-link top-line__nav-link5">Контакты</a></div>
+		  </nav>
+		  <div class="top-line__phone">+7 (495) 00-99-55</div>
+	 </div>
+
+	 <div class="header-content">
+
+		  <!-- Левая часть шапки с названием сайта и направлениями работы -->
+		  <div class="left-header-block">
+				<h1 class="left-header-block__zag">Armata Financical Group</h1>
+				<ul class="left-header-block__spisok">
+					 <li class="left-header-block__punkt left-header-block__punkt1"><i class="fa fa-chevron-right"></i>
+						  <a href="#" class="left-header-block__link left-header-block__link1">Независимая оценка имущества</a>
+					 </li>
+					 <li class="left-header-block__punkt left-header-block__punkt2"><i class="fa fa-chevron-right"></i>
+						  <a href="#" class="left-header-block__link left-header-block__link2">Сделки слияния и поглощения</a>
+					 </li>
+					 <li class="left-header-block__punkt left-header-block__punkt3"><i class="fa fa-chevron-right"></i>
+						  <a href="#" class="left-header-block__link left-header-block__link3">Бухгалтерские услуги</a>
+					 </li>
+				</ul>
+		  </div>
+
+		  <!-- Верхняя форма обратной связи -->
+		  <div class="form-top">
+				<h4 class="form-top__zag">Заявка:</h4>
+				<p class="form-top__opis">Оставьте заявку и мы свяжемся с вами в течение 15 минут в рабочее время с 10:00 до 18:00 c пн-пт.</p>
+				<label>
+					 <div class="form-top__input-name">Ваше имя:</div>
+					 <input type="text" name="name" required>
+				</label>
+				<label>
+					 <div class="form-top__input-phone">Ваш телефон:</div>
+					 <input type="text" name="phone" required>
+				</label>
+				<div class="buttons-wrap">
+					 <button class="buttons">Отправить</button>
+				</div>
+		  </div>
+	 </div>
+	 <a href="#">
+		  <div class="arrow-down"></div>
+	 </a>
+</header>
+
+<!-- Секция №1 -->
+<section class="section-1">
+
+	 <div class="section-1-head">
+		  <div class="container">
+				<div class="row">
+					 <div class="section-1-head__header">
+						  <h2 class="section-1-head__zag">Независимая оценка имущества</h2>
+						  <p class="section-1-head__opis"><strong>Oпределение рыночной стоимости</strong>любого актива, или
+								<a href="#" class="section-1-head__link-ocenka">оценка</a> — это первый этап всех рыночных отношений. Оценка заключается в объективном анализе объекта с целью придания ему стоимостных характеристик, выраженных в едином денежном эквиваленте.
+						  </p>
+					 </div>
+				</div>
+		  </div>
+	 </div>
+
+	 <div class="section-1-content1">
+
+		  <div class="container">
+
+				<div class="cont-row1">
+					 <div class="cont-item cont-item1">
+						  <h4 class="cont-item__zag cont-item1__zag">
+								<a class="cont-item__link cont-item__link1" href="#">Оценка ценных бумаг</a></h4>
+						  <p>Определение рыночной стоимости ценных бумаг и документов</p>
+					 </div>
+					 <div class="cont-item cont-item2">
+						  <h4 class="cont-item__zag cont-item2__zag">
+								<a class="cont-item__link cont-item__link2" href="#">Оценка недвижимости</a></h4>
+						  <p>Профессиональная оценка бизнес-активов предприятия</p>
+					 </div>
+					 <div class="cont-item cont-item3">
+						  <h4 class="cont-item__zag cont-item3__zag">
+								<a class="cont-item__link cont-item__link3" href="#">Оценка бизнеса и предприятий</a></h4>
+						  <p>Профессиональная оценка жилого и нежилого имущества</p>
+					 </div>
+				</div>
+
+				<div class="cont-row2">
+					 <div class="cont-item cont-item4">
+						  <h4 class="cont-item__zag cont-item4__zag">
+								<a class="cont-item__link cont-item__link4" href="#">Оценка машин и оборудования</a></h4>
+						  <p>Профессиональная оценка машин и оборудования для бизнеса</p>
+					 </div>
+					 <div class="cont-item cont-item__hidden">
+						  <h4><a href="#"></a></h4>
+					 </div>
+					 <div class="cont-item cont-item5">
+						  <h4 class="cont-item__zag cont-item5__zag">
+								<a class="cont-item__link cont-item__link5" href="#">Оценка инвестиционных проектов</a></h4>
+						  <p>независимая оценка бизнес проектов любого направления</p>
+					 </div>
+				</div>
+		  </div>
+
+		  <div class="s1-triangle">
+				<img class="triangle-logo" src="img/logo_triangle.svg" alt="Armata Financical Groul">
+				<img class="scales" src="img/icons/section_1/scales.svg" alt="Scales">
+		  </div>
+	 </div>
+
+	 <div class="section-1-content2">
+		  <div class="container">
+				<div class="cont-row3">
+					 <div class="cont-item cont-item6">
+						  <h4 class="cont-item__zag cont-item6__zag">
+								<a class="cont-item__link cont-item__link6" href="#">Оценка нематериальных активов</a></h4>
+						  <p>Определение стоимости нематериальных активов различных видов</p>
+					 </div>
+					 <div class="cont-item cont-item7">
+						  <h4 class="cont-item__zag cont-item7__zag">
+								<a class="cont-item__link cont-item__link7" href="#">Оценка себестоимости продукции</a></h4>
+						  <p>Определение себестоимости продукции производства</p>
+					 </div>
+					 <div class="cont-item cont-item8">
+						  <h4 class="cont-item__zag cont-item8__zag">
+								<a class="cont-item__link cont-item__link8" href="#">Бизнес-планирование и оценка</a></h4>
+						  <p>Разработка бизнес-плана и оценка его эффективности</p>
+					 </div>
+				</div>
+		  </div>
+	 </div>
+
+	 <div class="section-1-bottom">
+		  <div class="buttons-wrap">
+				<a class="buttons" href="#">Заказать оценку</a>
+		  </div>
+	 </div>
+</section>
+
+<!-- Секция №2 -->
+<section class="section-2">
+
+	 <div class="section-2-head">
+		  <div class="container">
+				<div class="row">
+					 <div class="section-2-head__header col-md-10 col-md-offset-1">
+						  <h2 class="section-2-head__zag">Сделки M&A</h2>
+						  <p class="section-2-head__opis">
+								<strong>Сделки cлияния и поглощения</strong> – это процессы укрупнения бизнеса и капитала. Популярность сделки слияния и поглощения приобрели в конце 80-х годов и сейчас они являются одним из основных движущих факторов развития бизнеса на макро и микроуровне. Эффективность сделок слияния и поглощения огромна и не вызывает сомнений.
+						  </p>
+						  <h3 class="section-2-head__zag2">Наши услуги по
+								<a href="#" class="section-2__zag-link">сопровождению сделок M&A</a></h3>
+					 </div>
+				</div>
+		  </div>
+	 </div>
+
+	 <div class="section-2-content">
+		  <div class="container">
+				<div class="wrap-items">
+					 <div class="s2-item__wrap s2-item__wrap1"><a href="#" class="s2-item__link s2-item__link1">
+						  <div class="s2-item__ico s2-item__ico1"></div>
+						  <div class="s2-item__txt s2-item__txt1">Разработка новой структуры управления бизнесом</div>
+					 </a></div>
+					 <div class="s2-item__wrap s2-item__wrap2"><a href="#" class="s2-item__link s2-item__link2">
+						  <div class="s2-item__ico s2-item__ico2"></div>
+						  <div class="s2-item__txt s2-item__txt2">Консультации по предпродажной подготовке бизнеса</div>
+					 </a></div>
+					 <div class="s2-item__wrap s2-item__wrap3"><a href="#" class="s2-item__link s2-item__link3">
+						  <div class="s2-item__ico s2-item__ico3"></div>
+						  <div class="s2-item__txt s2-item__txt3">Анализ стоимости бизнеса и активов</div>
+					 </a></div>
+					 <div class="s2-item__wrap s2-item__wrap4"><a href="#" class="s2-item__link s2-item__link4">
+						  <div class="s2-item__ico s2-item__ico4"></div>
+						  <div class="s2-item__txt s2-item__txt4">Консультации с покупателями и сопровождение</div>
+					 </a></div>
+					 <div class="s2-item__wrap s2-item__wrap5"><a href="#" class="s2-item__link s2-item__link5">
+						  <div class="s2-item__ico s2-item__ico5"></div>
+						  <div class="s2-item__txt s2-item__txt5">Юридический аудит приобретаемого актива</div>
+					 </a></div>
+					 <div class="s2-item__wrap s2-item__wrap6"><a href="#" class="s2-item__link s2-item__link6">
+						  <div class="s2-item__ico s2-item__ico6"></div>
+						  <div class="s2-item__txt s2-item__txt6">Разработка оптимальной схемы приобретения актива</div>
+					 </a></div>
+					 <div class="s2-item__wrap s2-item__wrap7"><a href="#" class="s2-item__link s2-item__link7">
+						  <div class="s2-item__ico s2-item__ico7"></div>
+						  <div class="s2-item__txt s2-item__txt7">Организация финансирования сделки</div>
+					 </a></div>
+					 <div class="s2-item__wrap s2-item__wrap8"><a href="#" class="s2-item__link s2-item__link8">
+						  <div class="s2-item__ico s2-item__ico8"></div>
+						  <div class="s2-item__txt s2-item__txt8">Подготовка и сопровождение документации</div>
+					 </a></div>
+					 <div class="s2-item__wrap s2-item__wrap9"><a href="#" class="s2-item__link s2-item__link9">
+						  <div class="s2-item__ico s2-item__ico9"></div>
+						  <div class="s2-item__txt s2-item__txt9">Получение разрешений в государственных органах</div>
+					 </a></div>
+					 <div class="s2-item__wrap s2-item__wrap10"><a href="#" class="s2-item__link s2-item__link10">
+						  <div class="s2-item__ico s2-item__ico10"></div>
+						  <div class="s2-item__txt s2-item__txt10">Интеграция нового актива в схему управления холдингом</div>
+					 </a></div>
+				</div>
+		  </div>
+	 </div>
+
+	 <div class="section-2-bottom">
+		  <div class="buttons-wrap">
+				<a class="buttons" href="#">Заказать сопровождение</a>
+		  </div>
+	 </div>
+</section>
+
+<!-- Секция №3 -->
+<section class="section-3">
+
+	 <div class="section-3-head">
+		  <div class="container">
+				<div class="row">
+					 <div class="section-3-head__header col-md-10 col-md-offset-1">
+						  <h2 class="section-3-head__zag">Бухгалтерские услуги</h2>
+						  <p class="section-3-head__opis">
+								<strong>Бухгалтерский учёт</strong> это строго структурированная система сбора, регистрации и систематизации информации в денежном выражении о состоянии имущества, обязательств организации и их изменениях путём сплошного, непрерывного и документального учёта всех хозяйственных и экономических операций.
+						  </p>
+					 </div>
+				</div>
+		  </div>
+	 </div>
+
+	 <div class="s3-content">
+
+		  <div class="s3-content__cont container">
+
+				<div class="row s3__row s3__row1">
+					 <div class="s3-row__item s3-row1__item1">
+						  <h4 class="s3-row-item__zag s3-row1-item1__zag">
+								<a class="s3-row-item__link s3-row1-item1__link1" href="#">Документальное оформление</a>
+						  </h4>
+						  <p>Документальное оформление всех хозяйственных операций предприятия</p>
+					 </div>
+					 <div class="s3-row__item s3-row1__item2">
+						  <h4 class="s3-row-item__zag s3-row1-item2__zag">
+								<a class="s3-row-item__link s3-row1-item2__link2" href="#">Обработка данных</a>
+						  </h4>
+						  <p>Обработка, систематизация и введение данных в бухгалтерскую программу</p>
+					 </div>
+					 <div class="s3-row__item s3-row1__item3">
+						  <h4 class="s3-row-item__zag s3-row1-item3__zag">
+								<a class="s3-row-item__link s3-row1-item3__link3" href="#">Расчеты</a>
+						  </h4>
+						  <p>Расчет заработной платы и налогов</p>
+					 </div>
+				</div>
+
+				<div class="row s3__row s3__row2">
+					 <div class="s3-row__item s3-row2__item1">
+						  <h4 class="s3-row-item__zag s3-row2-item1__zag">
+								<a class="s3-row-item__link s3-row2-item1__link1" href="#">Формирование отчетности</a>
+						  </h4>
+						  <p>Формирование финансового результата предприятия</p>
+					 </div>
+					 <div class="s3-row__item s3-row-item__hidden">
+						  <div class="s3-row2-item-hidden__image-wrap"></div>
+					 </div>
+					 <div class="s3-row__item s3-row2__item2">
+						  <h4 class="s3-row-item__zag s3-row2-item2__zag">
+								<a class="s3-row-item__link s3-row2-item2__link2" href="#">Налоговая отчетность</a>
+						  </h4>
+						  <p>Оформление и подача бухгалтерской и налоговой отчетности в соответствующие</p>
+					 </div>
+				</div>
+
+				<div class="row s3__row s3__row3">
+					 <div class="s3-row__item s3-row3__item1">
+						  <h4 class="s3-row-item__zag s3-row3-item1__zag">
+								<a class="s3-row-item__link s3-row3-item1__link1" href="#">Консультирование организаций</a>
+						  </h4>
+						  <p>Консультирование по вопроса оптимизации финансовой функции и бухгалтерскому учету</p>
+					 </div>
+					 <div class="s3-row__item s3-row3__item2">
+						  <h4 class="s3-row-item__zag s3-row3-item2__zag">
+								<a class="s3-row-item__link s3-row3-item2__link2" href="#">Помощь в подборе персонала</a>
+						  </h4>
+						  <p>Помощь в подборе персонала в отдел бухгалтерского и налогового учета</p>
+					 </div>
+					 <div class="s3-row__item s3-row3__item3">
+						  <h4 class="s3-row-item__zag s3-row3-item3__zag">
+								<a class="s3-row-item__link s3-row3-item3__link3" href="#">Восстановление бухгалтерского учета</a>
+						  </h4>
+						  <p>Восстановление функционирования предприятия и бухгалтерского учета</p>
+					 </div>
+				</div>
+
+		  </div>
+
+	 </div>
+
+	 <div class="section-1-bottom section-3-bottom__dark-bg">
+		  <div class="buttons-wrap">
+				<a class="buttons" href="#">Заказать бухгалтерские услуги</a>
+		  </div>
+	 </div>
+</section>
+
+<!-- Секция №4 -->
+<section class="section-4">
+
+	 <div class="section-4-head">
+		  <div class="container">
+				<div class="row">
+					 <div class="section-4-head__header col-md-10 col-md-offset-1">
+						  <h2 class="section-4-head__zag">Преимущества Armata Financical Group</h2>
+						  <p class="section-4-head__opis">
+								<strong>Компания AFG</strong> поддерживает российские и иностранные компании, работающие на отечественном рынке в решении задач экономического роста, защиты своих интересов, управления текущей деятельностью. Помогает создавать системы владения активами, устанавливает коммуникации с новыми партнерами и рынками, организует сделки и привлекает капиталы.
+						  </p>
+						  <h3 class="section-4-head__zag2">Привлекательные условия сотрудничества</h3>
+					 </div>
+				</div>
+		  </div>
+	 </div>
+
+	 <div class="s4-content">
+
+		  <div class="s4-content__cont container">
+				<div class="row s4__row">
+					 <div class="s4-row-wrap__item s4-row-wrap__item1">
+						  <div class="s4-row__ico s4-row__ico1">
+								<img src="./img/icons/section_4/1.svg" alt="111">
+						  </div>
+						  <h4 class="s4-row__item-zag">Скидки</h4>
+						  <p class="s4-row__item-opis">Предоставляем всем нашим клиентам уникальную возможность получить скидку
+								<strong>50%</strong> на все услуги</p>
+					 </div>
+					 <div class="s4-row-wrap__item s4-row-wrap__item2">
+						  <div class="s4-row__ico s4-row__ico2">
+								<img src="./img/icons/section_4/2.svg" alt="222">
+						  </div>
+						  <h4 class="s4-row__item-zag">Команда</h4>
+						  <p class="s4-row__item-opis">У нас большой опыт работы в крупнейших консалтинговых компаниях</p>
+					 </div>
+					 <div class="s4-row-wrap__item s4-row-wrap__item3">
+						  <div class="s4-row__ico s4-row__ico3">
+								<img src="./img/icons/section_4/3.svg" alt="333">
+						  </div>
+						  <h4 class="s4-row__item-zag">Скорость</h4>
+						  <p class="s4-row__item-opis">Приступаем к выполнению обязательст в день обращения в нашу компанию</p>
+					 </div>
+				</div>
+		  </div>
+	 </div>
+
+	 <div class="section-4-bottom section-4-bottom__light-bg">
+		  <div class="buttons-wrap">
+				<a class="buttons" href="#">Обратиться к нам</a>
+		  </div>
+	 </div>
+</section>
+
+<!-- Секция №5 -->
+<section class="section-5">
+
+	 <div class="section-3-head">
+		  <div class="container">
+				<div class="row">
+					 <div class="section-3-head__header col-md-10 col-md-offset-1">
+						  <h2 class="section-3-head__zag">Как мы работаем</h2>
+					 </div>
+				</div>
+		  </div>
+	 </div>
+
+	 <div class="s5-content">
+
+		  <div class="s5-content__cont container">
+				<div class="row s5__row">
+					 <div class="s5-row__wrap-items">
+
+						  <div class="s5-row__tr s5-row__tr1">
+								<div class="s5-row-tr__content">
+									 <img src="./img/icons/section_5/1.svg" alt="1">
+									 <div class="s5-row-tr__opis s5-row-tr__opis1"><span>1.</span> Вы оставляете заявку</div>
+								</div>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291.01178 129" height="129" width="291.01178" version="1.1" id="svg2">
+									 <path id="path4138" d="M 3.4644996,126.28999 3.1137219,4.0613763 l 240.7182181,0 43.11847,58.7692707 -43.28202,63.461773 z" style="fill:#f39f18;fill-opacity:1"/>
+								</svg>
+						  </div>
+
+						  <div class="s5-row__tr s5-row__tr2">
+								<div class="s5-row-tr__content">
+									 <img src="./img/icons/section_5/2.svg" alt="2">
+									 <div class="s5-row-tr__opis s5-row-tr__opis2"><span>2.</span> Подписываем договор</div>
+								</div>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291.01178 129" height="129" width="291.01178" version="1.1" id="svg2">
+									 <path id="path4138-3" d="M 3.3821314,126.02828 46.475601,62.999427 3.0313514,3.799673 l 240.7182186,0 43.11847,58.769271 -43.28202,63.461766 z" style="fill:#f39f18;fill-opacity:1"/>
+								</svg>
+						  </div>
+
+
+						  <div class="s5-row__tr s5-row__tr3">
+								<div class="s5-row-tr__content">
+									 <img src="./img/icons/section_5/3.svg" alt="3">
+									 <div class="s5-row-tr__opis s5-row-tr__opis3"><span>3.</span> Мы проводим оценку</div>
+								</div>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291.01178 129" height="129" width="291.01178" version="1.1" id="svg2">
+									 <path id="path4138-3" d="M 3.3821314,126.02828 46.475601,62.999427 3.0313514,3.799673 l 240.7182186,0 43.11847,58.769271 -43.28202,63.461766 z" style="fill:#f39f18;fill-opacity:1"/>
+								</svg>
+						  </div>
+
+
+						  <div class="s5-row__tr s5-row__tr4">
+								<div class="s5-row-tr__content">
+									 <img src="./img/icons/section_5/1.svg" alt="4">
+									 <div class="s5-row-tr__opis s5-row-tr__opis4"><span>4.</span> Вы получаете отчет</div>
+								</div>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291.01178 129" height="129" width="291.01178" version="1.1" id="svg2">
+									 <path id="path4138-3" d="M 3.3821314,126.02828 46.475601,62.999427 3.0313514,3.799673 l 240.7182186,0 43.11847,58.769271 -43.28202,63.461766 z" style="fill:#f39f18;fill-opacity:1"/>
+								</svg>
+						  </div>
+					 </div>
+				</div>
+		  </div>
+	 </div>
+
+	 <div class="section-1-bottom section-3-bottom__dark-bg">
+		  <div class="buttons-wrap">
+				<a class="buttons" href="#">Оставить заявку</a>
+		  </div>
+	 </div>
+
+</section>
+
+
+<footer class="footer"></footer>
+
+<div class="hidden"></div>
+
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+
+<!-- Load CSS -->
+<script>
+
+	 //Load Libs CSS
+	 var ms = document.createElement("link");
+	 ms.rel = "stylesheet";
+	 ms.href = "libs/animate/animate.css";
+	 document.getElementsByTagName("head")[0].appendChild(ms);
+
+	 //Header Styles (compress & paste to header after release)
+	 // var ms=document.createElement("link");ms.rel="stylesheet";
+	 // ms.href="_header.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+
+	 //User Styles + Media Queries
+	 var ms = document.createElement("link");
+	 ms.rel = "stylesheet";
+	 ms.href = "mini_css/main.min.css";
+	 document.getElementsByTagName("head")[0].appendChild(ms);
+
+</script>
+
+<!-- Load Scripts -->
+<script>var scr = {
+	 "scripts": [
+		  {"src": "libs/modernizr/modernizr.js", "async": false},
+		  {"src": "libs/jquery/jquery-1.11.2.min.js", "async": false},
+		  {"src": "libs/waypoints/waypoints.min.js", "async": false},
+		  {"src": "libs/animate/animate-css.js", "async": false},
+		  {"src": "libs/plugins-scroll/plugins-scroll.js", "async": false},
+		  {"src": "libs/equalHeight/jquery.equalheights.min.js", "async": false},
+		  {"src": "libs/drawsvg/drawfillsvg.min.js", "async": false},
+		  {"src": "libs/Magnific-Popup/jquery.magnific-popup.min.js", "async": false},
+		  {"src": "libs/owl/owl.carousel.min.js", "async": false},
+		  {"src": "mini_js/common.js", "async": false}
+	 ]
+};
+!function (t, n, r) {
+	 "use strict";
+	 var c = function (t) {
+		  if ("[object Array]" !== Object.prototype.toString.call(t))return !1;
+		  for (var r = 0; r < t.length; r++) {
+				var c = n.createElement("script"), e = t[r];
+				c.src = e.src, c.async = e.async, n.body.appendChild(c)
+		  }
+		  return !0
+	 };
+	 t.addEventListener ? t.addEventListener("load", function () {
+		  c(r.scripts);
+	 }, !1) : t.attachEvent ? t.attachEvent("onload", function () {
+		  c(r.scripts)
+	 }) : t.onload = function () {
+		  c(r.scripts)
+	 }
+}(window, document, scr);
+</script>
+
+</body>
+</html>

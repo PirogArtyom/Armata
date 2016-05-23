@@ -1,0 +1,324 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+{
+    .top-line
+    {
+        -webkit-justify-content: center;
+                justify-content: center;
+    }
+}
+@media only screen and (max-width : 1199px)
+{
+    .s3-row2__item1
+    {
+        padding-left: 0;
+
+        transform: translate(0px,0px);
+    }
+    .s3-row2__item2
+    {
+        padding-right: 0;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+{
+    .top-line
+    {
+        -webkit-justify-content: center;
+                justify-content: center;
+    }
+    .s3__row1
+    {
+        display: flex;
+
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .s3-row1__item2
+    {
+        -webkit-align-self: center;
+                align-self: center;
+    }
+    .s3-row-item__hidden
+    {
+        display: none;
+    }
+    .s3-row2__item2
+    {
+        margin: 0;
+    }
+    .s3-row3__item2
+    {
+        -webkit-align-self: center;
+                align-self: center;
+    }
+    .s3-content
+    {
+        background: none;
+    }
+    .s3-row__item
+    {
+        width: 200px;
+        padding: 0 10px;
+    }
+    .s3__row
+    {
+        height: 162px;
+    }
+    .s3-content
+    {
+        height: auto;
+        margin-top: 65px;
+        margin-bottom: 65px;
+        padding: 0;
+    }
+}
+@media only screen and (max-width : 780px)
+{
+    .cont-row1,
+    .cont-row2,
+    .cont-row3
+    {
+        -webkit-flex-flow: column wrap;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
+        -webkit-align-items: flex-start;
+                align-items: flex-start;
+    }
+    .cont-item
+    {
+        width: 100%;
+        height: 100px;
+        padding-right: 0;
+        padding-left: 0;
+
+        text-align: center;
+
+        flex: 1 1 120px;
+    }
+    .cont-item8 p
+    {
+        border: transparent;
+    }
+    .cont-item2
+    {
+        -webkit-align-self: flex-start;
+                align-self: flex-start;
+    }
+    .cont-item__hidden
+    {
+        display: none;
+    }
+    .cont-row2
+    {
+        margin-top: 0;
+    }
+    .cont-item7
+    {
+        padding-top: 0;
+    }
+    .scales
+    {
+        display: none;
+    }
+    .triangle-logo
+    {
+        transform: translate(-2%,0);
+    }
+    .s3__row
+    {
+        display: flex;
+
+        height: auto;
+
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .s3-row__item
+    {
+        width: 100%;
+        max-width: 100%;
+        height: 100px;
+        margin: 0;
+
+        text-align: center;
+
+        flex: 1 1 110px;
+    }
+    .s3-content__cont
+    {
+        display: flex;
+
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .s3-content
+    {
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+{
+    /*Disable Animation on Mobile Devices*/
+    .animated
+    {
+        -webkit-transition-property: none !important;
+           -moz-transition-property: none !important;
+            -ms-transition-property: none !important;
+        /*CSS transitions*/
+             -o-transition-property: none !important;
+                transition-property: none !important;
+        -webkit-transform: none !important;
+           -moz-transform: none !important;
+            -ms-transform: none !important;
+        /*CSS transforms*/
+             -o-transform: none !important;
+                transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+           -moz-animation: none !important;
+            -ms-animation: none !important;
+             -o-animation: none !important;
+                animation: none !important;
+    }
+    .top-line__nav
+    {
+        display: flex;
+
+        padding: 0 20px;
+
+        align-self: center;
+        flex-flow: column wrap;
+        -webkit-justify-content: center;
+                justify-content: center;
+    }
+    .top-line__nav-item
+    {
+        margin-bottom: 10px;
+    }
+    .top-line
+    {
+        -webkit-align-items: center;
+                align-items: center;
+    }
+    .top-line__logo
+    {
+        order: 1;
+    }
+    .top-line__nav
+    {
+        margin-top: 10px;
+
+        order: 3;
+    }
+    .top-line__phone
+    {
+        font-size: 25px;
+
+        order: 2;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+{
+    .top-line__logo
+    {
+        margin-bottom: 10px;
+
+        order: 1;
+    }
+    .top-line__nav
+    {
+        margin-top: 10px;
+
+        order: 3;
+    }
+    .top-line__phone
+    {
+        font-size: 25px;
+
+        order: 2;
+    }
+}
+@media only screen and (max-width : 409px)
+{
+    .s2-item__wrap
+    {
+        display: flex;
+
+        max-width: 160px;
+        height: 250px;
+        padding: 0 20px 20px;
+
+        flex: 1 1 160px;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+{
+    .top-line__phone
+    {
+        font-size: 20px;
+    }
+    .left-header-block__zag
+    {
+        font-size: 45px;
+    }
+}
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+{
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+{
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+{
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+{
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1920px)
+{
+    .top-line
+    {
+        justify-content: center;
+    }
+    .header-content
+    {
+        -webkit-justify-content: center;
+                justify-content: center;
+    }
+    .form-top
+    {
+        margin-left: 200px;
+    }
+    .top-line__logo
+    {
+        margin-right: 100px;
+    }
+    .top-line__nav
+    {
+        margin-right: 100px;
+    }
+}

@@ -1,0 +1,30 @@
+.homesect-1
+    position: relative
+    padding-top: 50px
+    background-color: #f9f9f9
+
+    h2
+        font-family: "PFCentroSlabProMedium"
+        font-weight: normal
+        position: relative
+        text-align: center
+        text-transform: uppercase
+
+        &::after
+            position: absolute
+            bottom: -34px
+            left: 50%
+            display: block
+            width: 165px
+            height: 4px
+            content: ""
+            transform: translate(-50%, 0)
+            background-color: orange
+
+    &::before
+        position: absolute
+        top: -6px
+        width: 100%
+        height: 6px
+        content: ""
+        background-image: url(../img/bah_1.png)
